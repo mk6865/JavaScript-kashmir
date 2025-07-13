@@ -46,3 +46,34 @@ console.log(typeof heros)// output is the object
 console.log(typeof null)// output is the object
 console.log(typeof undefined)//output is the undefined
 console.log(typeof Symbol);//output is the function
+
+
+
+
+
+///***********Memory management system
+
+// stack(primitive) , heap(NON primitive memeory)
+
+// primitive means copy will be provided and heap means they will provide reference
+
+let myName = "momin Khan";
+
+let anotherName = myName;
+anothername = "insha";
+console.log(anothername);
+console.log(myName);
+
+
+let user={
+    email: "usergoogle.com",
+    upi:"user1",
+    // it will take memory in heap and user will stack referennce is stored
+}
+let userTwo = user
+userTwo.email="mk502lkda";
+console.log(user.email);
+console.log(userTwo.email);
+
+//primitive are stored in the stack and copy is the given 
+// non primitive reference is given so it reflect changes on both sides
